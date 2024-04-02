@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"], input[type="number"], input[type="tel"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #successMessage {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+    
+
+<h2>Patient Details</h2>
+
+<form action="connect.php" method="POST">
+    <label for="patientname">Patient Name:</label>
+    <input type="text" id="patientname" name="patientname"  required><br>
+    
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" required><br>
+    
+    <label for="gender">Gender:</label>
+    <input type="text" id="gender" name="gender" required><br>
+    
+    <label for="phonenumber">Phone Number:</label>
+    <input type="text" id="phonenumber" name="phonenumber"  required><br>
+    
+    <label for="illness">Illness:</label>
+    <input type="text" id="illness" name="illness" required><br>
+    
+    <label for="admitteddate">Admitted Date:</label>
+    <input type="date" id="admitteddate" name="admitteddate" required><br>
+    
+    <label for="wardno">Ward No:</label>
+    <input type="text" id="wardno" name="wardno" required><br>
+    
+    <label for="doctorassigned">Doctor Assigned:</label>
+    <input type="text" id="doctorassigned" name="doctorassigned" required><br>
+    
+    <label for="dischargedate">Discharge Date:</label>
+    <input type="date" id="dischargedate" name="dischargedate" required><br>
+    
+    <label for="totalbill">Total Bill:</label>
+    <input type="text" id="totalbill" name="totalbill" required><br>
+    
+    <button type="submit" id="submitButton">Submit</button>
+</form>
+</div>
+</div>
+
+<div id="successMessage">Entry done successfully.</div>
+
+
+</body>
+</html>
